@@ -1,0 +1,5 @@
+
+//How to find component dependencies in Salesforce?
+SELECT MetadataComponentId, MetadataComponentType, MetadataComponentName 
+FROM MetadataComponentDependency 
+WHERE RefMetadataComponentId = '01p3t00000FeKQYAA3'
