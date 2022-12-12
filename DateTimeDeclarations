@@ -1,0 +1,29 @@
+//Date datatype
+Date d1;
+d1=Date.newInstance(2022, 5, 22);
+//yyyy, mm,dd
+
+system.debug(d1);
+system.debug(d1.toStartOfMonth());
+system.debug(d1.toStartOfWeek());
+system.debug(d1.addDays(5));
+system.debug(d1.addMonths(5));
+system.debug(d1.addYears(5));
+
+// Time 
+Time t1;
+
+t1=Time.newInstance(2, 22, 22, 32);
+//hour, minute, second, millisecond
+system.debug(t1.addHours(5));
+system.debug(t1.addMinutes(5));
+system.debug(t1.addseconds(5));
+
+//DateTime declaring and assigning values  
+DateTime dt1=DateTime.newInstance(2022, 4, 4, 2, 22, 33);
+//DateTime dt1=DateTime.newInstance(year, month, day, hour, minute, second)
+
+//current date time
+system.debug(DateTime.now());
+
+
