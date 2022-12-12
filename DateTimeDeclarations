@@ -27,3 +27,9 @@ DateTime dt1=DateTime.newInstance(2022, 4, 4, 2, 22, 33);
 system.debug(DateTime.now());
 
 
+//this is How to convert Unix Timestamp to DateTime using Apex in Salesforce?
+DateTime currentDT = System.now();
+String strUnixTimeStamp = String.valueof( currentDT.getTime() );
+System.debug( ‘String UnixTimeStamp is ‘ + strUnixTimeStamp );
+Long longUnixTimeStamp = Long.valueOf( strUnixTimeStamp );
+System.debug ( DateTime.newInstance( longUnixTimeStamp ) );
