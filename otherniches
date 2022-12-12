@@ -3,3 +3,7 @@
 SELECT MetadataComponentId, MetadataComponentType, MetadataComponentName 
 FROM MetadataComponentDependency 
 WHERE RefMetadataComponentId = '01p3t00000FeKQYAA3'
+
+SELECT MetadataComponentName, MetadataComponentType
+    FROM MetadataComponentDependency
+    WHERE RefMetadataComponentType = 'ApexClass'
